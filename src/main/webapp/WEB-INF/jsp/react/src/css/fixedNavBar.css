@@ -1,0 +1,23 @@
+.scrollable {
+    position: fixed;
+    top: 62px;
+    height: calc(100% - 62px);
+    overflow-y: scroll;
+    /* this will hide the scrollbar in mozilla based browsers */
+    overflow: -moz-scrollbars-none;
+    /* this will hide the scrollbar in internet explorers */
+    -ms-overflow-style: none;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+.postsList {
+    top: 62px;
+}
+
+.marginFromTopForFixedNavbar {
+    margin-top: 62px;
+}
